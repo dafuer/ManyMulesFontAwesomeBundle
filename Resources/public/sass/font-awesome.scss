@@ -33,9 +33,7 @@ $font_path: "../font/fontawesome-webfont" !default;
 		"#{$font_path}.otf", opentype,
 		"#{$font_path}.svgz#FontAwesomeRegular", svg,
 		"#{$font_path}.svg#FontAwesomeRegular", svg),
-	'#{$font_path}.eot',
-	normal,
-	normal);
+	'#{$font_path}.eot');
 
 /* sprites.less reset */
 [class^="icon-"],
