@@ -1,0 +1,23 @@
+{
+    "name": "manymules/fontawesome-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony Font Awesome Bundle",
+    "keywords": ["webfonts", "typography", "graphics", "css", "manymules"],
+    "homepage": "http://fortawesome.github.com/Font-Awesome/",
+    "license": "CC BY 3.0",
+    "authors": [
+        {
+            "name": "Bernd Matzner",
+            "email": "bernd@manymules.com",
+            "homepage": "http://manymules.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "ManyMules\\FontAwesomeBundle": "" }
+    },
+    "target-dir": "ManyMules/FontAwesomeBundle"
+}

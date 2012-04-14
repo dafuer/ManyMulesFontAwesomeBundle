@@ -1,4 +1,4 @@
-Symfony2 Font Awesome Bundle
+Symfony Font Awesome Bundle
 =======================
 
 ## Current Version
