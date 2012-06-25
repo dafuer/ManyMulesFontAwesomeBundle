@@ -3,7 +3,7 @@ Symfony Font Awesome Bundle
 
 ## Current Version
 
-Font Awesome 2012-03-09
+Font Awesome v2.0
 
 ## Installation
 
