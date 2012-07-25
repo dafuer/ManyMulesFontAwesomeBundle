@@ -1,7 +1,7 @@
 {
     "name": "manymules/fontawesome-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony Font Awesome Bundle",
+    "description": "FontAwesome Bundle for Symfony2",
     "keywords": ["webfonts", "typography", "graphics", "css", "manymules"],
     "homepage": "http://fortawesome.github.com/Font-Awesome/",
     "license": "CC BY 3.0",

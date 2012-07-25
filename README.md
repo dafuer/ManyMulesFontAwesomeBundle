@@ -1,5 +1,4 @@
-Symfony Font Awesome Bundle
-=======================
+# FontAwesome Bundle for Symfony2
 
 ## Current Version
 
@@ -7,36 +6,67 @@ Font Awesome v2.0
 
 ## Installation
 
-### Add bundle to your vendor folder
+### Add bundle to your composer.json file
 
-    git submodule add git://github.com/ManyMules/ManyMulesFontAwesomeBundle.git vendor/bundles/ManyMules/Bundle/FontAwesomeBundle
+``` js
+// composer.json
+
+{
+    "require": {
+		// ...
+        "manymules/fontawesome-bundle": "*"
+    }
+}
+```
 
 ### Add bundle to your application kernel
 
-    // app/AppKernel.php
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-            new ManyMules\Bundle\FontAwesomeBundle\ManyMulesFontAwesomeBundle(),
-            // ...
-        );
-    }
+``` php
+// app/AppKernel.php
 
-### Add ManyMules bundles folder to autoload
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new ManyMules\FontAwesomeBundle\ManyMulesFontAwesomeBundle(),
+        // ...
+    );
+}
+```
 
-    // app/autoload.php
-    $loader->registerNamespaces(array(
-        ...
-        'ManyMules\Bundle'               => __DIR__.'/../vendor/bundles',
-        ...
-    ));
+### Download the bundle using Composer
 
-Licenses
---------
+``` bash
+$ php composer.phar update manymules/fontawesome-bundle
+```
+
+### Install assets
+
+Given your server's public directory is named "web", install the public vendor resources
+
+``` bash
+$ php app/console assets:install web
+```
+
+Optionally, use the --symlink attribute to create links rather than copies of the resources 
+
+``` bash
+$ php app/console assets:install --symlink web
+```
+
+## Usage
+
+Refer to the desired files in your HTML template, e.g.
+
+``` html
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/manymulesfontawesome/css/font-awesome.css') }}" />
+```
+
+# Licenses
+
 Refer to the source code of the included files for license information
 
-References
-----------
+# References
+
 [1]: http://fortawesome.github.com/Font-Awesome/
 [2]: http://symfony.com
