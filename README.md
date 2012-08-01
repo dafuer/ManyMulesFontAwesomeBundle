@@ -28,7 +28,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new ManyMules\FontAwesomeBundle\FontAwesomeBundle(),
+        new ManyMules\ManyMulesFontAwesomeBundle\ManyMulesFontAwesomeBundle(),
         // ...
     );
 }
@@ -59,7 +59,7 @@ $ php app/console assets:install --symlink web
 Refer to the desired files in your HTML template, e.g.
 
 ``` html
-<link rel="stylesheet" type="text/css" href="{{ asset('bundles/fontawesome/css/font-awesome.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/manymulesfontawesome/css/font-awesome.css') }}" />
 ```
 
 # Licenses
